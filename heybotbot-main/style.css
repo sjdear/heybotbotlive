@@ -1,0 +1,242 @@
+
+body { 
+    color: #e5f0fc; 
+    font-size: 18px; 
+    font-family: "Times New Roman"; 
+    background: #FFFFFF; 
+
+}
+
+input {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    padding-bottom: 30px;
+    margin-bottom: 30px !important;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -25vw;
+    font-size: 18px; 
+    font-family: "Times New Roman";
+    animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.fadeOut {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+  
+  div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+  div.fadeOutButton, div.fadeOutButtonTwo, div.fadeOutButtonThree {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+
+
+  div.fadeInButton, div.fadeInButtonTwo, div.fadeInButtonThree {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+  div.fadeOutImage {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+  
+  div.fadeInImage {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .circular-text {
+    position: fixed;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 24px;
+    transition: 0.5s ease-out;
+  }
+
+button { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Times New Roman";
+  }
+
+.helloButton, .threeTwoButton {
+    position: fixed;
+    width: 10;
+    font-size: 18px;
+    left: 50%;
+    margin-top: 40vh;
+    animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
+}
+
+
+.twoOneButton {
+  position: fixed;
+  width: 10;
+  font-size: 18px;
+  left: 30%;
+  margin-top: 40vh;
+  animation: fadeIn linear 3s;
+-webkit-animation: fadeIn linear 3s;
+-moz-animation: fadeIn linear 3s;
+-o-animation: fadeIn linear 3s;
+-ms-animation: fadeIn linear 3s;
+}
+
+.twoTwoButton {
+  position: fixed;
+  width: 10;
+  font-size: 18px;
+  left: 70%;
+  margin-top: 40vh;
+  animation: fadeIn linear 3s;
+-webkit-animation: fadeIn linear 3s;
+-moz-animation: fadeIn linear 3s;
+-o-animation: fadeIn linear 3s;
+-ms-animation: fadeIn linear 3s;
+}
+
+.threeOneButton {
+  position: fixed;
+  width: 10;
+  font-size: 18px;
+  left: 30%;
+  margin-top: 40vh;
+  animation: fadeIn linear 3s;
+-webkit-animation: fadeIn linear 3s;
+-moz-animation: fadeIn linear 3s;
+-o-animation: fadeIn linear 3s;
+-ms-animation: fadeIn linear 3s;
+}
+
+.threeThreeButton {
+  position: fixed;
+  width: 10;
+  font-size: 18px;
+  left: 70%;
+  margin-top: 40vh;
+  animation: fadeIn linear 3s;
+-webkit-animation: fadeIn linear 3s;
+-moz-animation: fadeIn linear 3s;
+-o-animation: fadeIn linear 3s;
+-ms-animation: fadeIn linear 3s;
+}
+
+
+
+
+
+.noButton {
+    position: fixed;
+    width: 10;
+    font-size: 18px;
+    left: 60%;
+    margin-top: 40vh;
+    animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
+}
+
+
+  .circle {
+    height:1000px;
+    width:1000px;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    line-height:50px;
+ }
+ 
+ .overlay {
+    height:1000px;
+    width:1000px;
+    background:rgba(0, 0, 0, 0);
+    border-radius:50%;
+ }
+ 
+ .rotating {
+    animation:rotating 30s linear infinite;
+ }
+ 
+ @keyframes rotating  {
+    from {
+       transform:rotate(0deg);
+    }
+    
+    to {
+       transform:rotate(360deg);
+    }
+ 
+ }
+
+ .limit-container{
+    width: 80vw;
+    height: 80vh;
+    padding: 10px;
+    float: left;
+    margin: 20px 70px 40px 70px;
+    overflow: auto;
+ }
+
+
+.Typewriter__cursor {
+  display: none;
+}
