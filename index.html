@@ -1,107 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
-    <title>Hey BotBot</title>
-  </head>
-  <body>
-    <section class="game">  
-      <div class="intro">
-        <body> 
-            <div class="overlay"> 
-             <div class="circle rotating">
-                botbot
-             </div> 
-            </div>   
-           </body>
-        <div class="circular-text">
-            <span id="simple_arc">bot bot, psychic and future teller</span>
-        </div>
-      <!--
-        <script>
-            function play() {
-              var audio = document.getElementById("audio");
-              audio.volume = 0.2;
-              audio.play();
-            }
-          </script>
-          -->
-        <button value="PLAY" onclick="play()">click here to know your fortune</button>
-        <audio id="audio" loop audio.volume="0" src="botbot.mp3"></audio>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Hey BotBot</title>
+</head>
+
+<body>
+  <div class="page">
+    <img id="imageOne" class="imageOne" src="liberty.jpg"></img>
+    <img id="imageTwo" class="imageTwo" src="coldplay.jpg"></img>
+    <img id="imageThree" class="imageThree" src="degrassi.jpg"></img>
+    <div class="intro">
+      <div class="container">
+        <p>bot bot, psychic and future teller</p>
+        <button id="playButton">click here to know your fortune</button>
       </div>
+    </div>
 
-    <section class="chat">
-        <div class="match fadeOut">
-            <div id="app"></div>
-            <div class="title">hey bot bot</div>
-            <div class="content">
-                <div class="full-chat-block">
-                    <!-- Message Container -->
-                    <div class="outer-container">
-                        <div class="chat-container">
-                            <!-- Messages -->
-                            <div class="limit-container">
-                                <div class="chatbox" id="chatbox">
-                                    <h5 id="chat-timestamp"></h5>
-                                    <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                                </div>
-                                <!-- User input box -->
-                                <div class="chat-bar-input-block fadeOut">
-                                    <div id="userInput">
-                                        <input id="textInput" class="input-box" type="text" name="msg"
-                                            placeholder="Tap 'Enter' to send a message">
-                                        <p></p>
-                                    </div>
-                                </div>
-                                <div id="chat-bar-bottom">
-                                    <p></p>
-                                </div>
-                            </div>
-                            <!-- Buttons -->
-                            <div class="buttonChat fadeOutButton">
-                                <button id="helloButton" class="helloButton">option 1 of 1</button>   
-                            </div>
-                            <div class="buttonChatTwo fadeOutButtonTwo">
-                                <button id="twoOneButton" class="twoOneButton">option 1 of 2</button> 
-                                <button id="twoTwoButton" class="twoTwoButton">option 2 of 2</button>                        
-                            </div>
-                            <div class="buttonChatThree fadeOutButtonThree">
-                                <button id="threeOneButton" class="threeOneButton">option 1 of 3</button> 
-                                <button id="threeTwoButton" class="threeTwoButton">option 2 of 3</button> 
-                                <button id="threeThreeButton" class="threeThreeButton">option 3 of 3</button>                        
-                            </div>
-                        </div>
-                    </div>
-      
-                </div>
-            </div>            
+    <div class="chat">
+      <div class="inner-chat" id="inner-chat">
+        <div class="inner-chat-header">
+          <p>hey bot bot</p>
+          <a href="" id="aboutAlert">
+            <div class="header-buttons">
+                <label for="about-button" class="windows-box-shadow">?</label>
+            </div>
+        </a>
+        <script>
+          // Get the anchor element by its ID
+          var alertLink = document.getElementById('aboutAlert');
+        
+          // Add an event listener to the anchor tag
+          alertLink.addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default anchor click behavior
+            alert('Bot Bot is under consruction! This is a work in progress version!\n\nStory and Concept by: Cameron Vernali \nDevelopment and Design by: Sydney Deardorff\n\nNext update: June 2 2024');  // Show an alert
+          });
+        </script>
         </div>
-        <div class="images">
-            <div class="liberty fadeOutImage">
-                <img src="liberty.jpg"></img>
-            </div> 
-            <div class="coldplay fadeOutImage">
-                <img src="coldplay.jpg"></img>
-            </div> 
-            <div class="degrassi fadeOutImage">
-                <img src="degrassi.jpg"></img>
-            </div> 
+        <div class="inner-inner-chat">
+          <div class="inner-chat-content">
+            <div id="botMessage" class="botMessage">
+              <p></p>
+            </div>
+          </div>
         </div>
-    </section>
-    </body>
-    <script>
-        $('#simple_arc').circleType({radius:135});
-    </script>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <div id="userMessage">
+        </div>
+          <p></p>
+        </div>
+        <div class="inner-chat-footer">
+          <button id="userButton" class="userButton">Hello.</button>
+          <button id="userButtonTwo" class="userButtonTwo"></button>
+          <button id="userButtonThree" class="userButtonThree"></button>
+          <input id="textBox" class="textBox" type="text" name="msg"
+          placeholder="Tap 'Enter' to send a message">
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="circletype.min.js"></script>
-    <script src="http://circletype.labwire.ca/js/plugins.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
-    <script src="responses.js"></script>
-    <script src="script.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="scripttwo.js"></script>
+</body>
+
 </html>
