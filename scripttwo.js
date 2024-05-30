@@ -325,7 +325,7 @@ let botMessages = [
   "now how about this?",
   "interesting. when you see this, how does it make you feel?",
   "doing some thoughts... doing some thinking... oh, this is good. this is so you.",
-  "in a past life, you were... (random)",
+  "in a past life, you were... Seabiscuit",
   "another day, another correct past life told...",
   "this is great news, actually — i’ve been needing a 10th side gig. i think this could be it...",
   "what?",
