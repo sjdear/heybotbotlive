@@ -18,6 +18,10 @@ button {
   margin-left: 100px;
   margin-right: 100px;
   max-height: 40px;
+  padding: 10px;
+  text-align: center;
+  width: 30vw;
+  font-family: 'Source Code Pro';
 }
 
 .imageOne, .imageTwo, .imageThree {
@@ -162,6 +166,10 @@ span {
     margin-right: 20px;
   }
 
+  .textBox {
+    width: 60vw;
+  }
+
   button {
     font-size: 16px; /* Smaller font size for readability on smaller screens */
   }
@@ -182,6 +190,10 @@ span {
   .textBox, .userButton, .userButtonTwo, .userButtonThree {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  
+  .textBox {
+    width: 60vw;
   }
 
   button {
