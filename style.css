@@ -6,6 +6,9 @@ html {
 button {
   font-family: "Source Code Pro";
   white-space: normal;
+  border: none;
+  padding: 8px;
+  box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede, -4px -4px white, -4px 0 white, 0 -4px white, 2px 2px #818181, 0 2px #818181, 2px 0 #818181,  2px -2px #e0dede, -2px 2px #818181, -4px 2px white, -4px 4px black, 4px 4px black, 4px 0 black, 0 4px black, 2px -4px white, 4px -4px black;
 }
 
 .textBox {
@@ -17,11 +20,16 @@ button {
 
 .imageOne, .imageTwo, .imageThree {
   display: none;
-  max-width: 1040px;
   justify-content: center;
   margin: auto;
+  margin-top: 9vh;
   z-index: 1001;
   position: relative; 
+  object-fit: contain;
+  padding: 0;
+  width: 90%;
+  max-width: 1000px;
+  height: 82vh;
 }
 
 .userButton {
@@ -54,6 +62,12 @@ body {
   background-image: linear-gradient(to bottom right, #F9CC6B, #FCA682);
 }
 
+span {
+  padding-right: 5px;
+  padding-left: 5px;
+  display: inline-block;
+}
+
 .intro {
   display: flex;
   align-items: center;
@@ -83,6 +97,7 @@ body {
   padding: 0;
   width: 90%;
   max-width: 1000px;
+  margin-bottom: 10vh;
   height: 82vh;
   overflow: auto;
   background-color: #fff;
@@ -115,6 +130,7 @@ body {
   justify-content: flex-end;
   margin-top: 20px;
   text-align: center; 
+  margin-bottom: 2vh;
 }
 
 .header-buttons {
@@ -152,6 +168,11 @@ body {
   body {
     font-size: 16px; /* Adjust the body font size for better readability */
   }
+
+  .inner-chat {
+    margin-bottom: 14vh;
+    margin-top: 2vh;
+  }
 }
 
 /* Media Query for devices with max-width of 480px (small phones) */
@@ -169,4 +190,3 @@ body {
     font-size: 14px; /* Adjust the body font size further for better readability */
   }
 }
-
