@@ -171,7 +171,8 @@ span {
 
   .inner-chat {
     margin-bottom: 14vh;
-    margin-top: 2vh;
+    margin-top: 8vh;
+    height: 75vh;
   }
 }
 
@@ -188,5 +189,11 @@ span {
 
   body {
     font-size: 14px; /* Adjust the body font size further for better readability */
+  }
+
+  .inner-chat {
+    margin-bottom: 14vh;
+    margin-top: 8vh;
+    height: 75vh;
   }
 }
