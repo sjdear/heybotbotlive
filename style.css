@@ -178,6 +178,10 @@ span {
     font-size: 16px; /* Adjust the body font size for better readability */
   }
 
+  .inner-chat-footer {
+    margin-bottom: 0vh !important;
+  }
+
   .inner-chat {
     margin-bottom: 14vh;
     margin-top: 8vh;
@@ -202,6 +206,10 @@ span {
 
   body {
     font-size: 14px; /* Adjust the body font size further for better readability */
+  }
+
+  .inner-chat-footer {
+    margin-bottom: 0vh !important;
   }
 
   .inner-chat {
