@@ -57,7 +57,6 @@ a {
 body {
   margin: 0 auto;
   height: 100vh;
-  background-color: #FCA682;
   font-size: 18px; 
   font-family: "Source Code Pro";
   background-image: linear-gradient(to bottom right, #F9CC6B, #FCA682);
