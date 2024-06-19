@@ -345,8 +345,15 @@ function manageImages(j) {
   const image = imageMapping[j];
   if (image) {
     image.style.display = "block";
+    var hideDivs = document.querySelectorAll('.chat, .inner-chat-header, .inner-chat-footer');
+    hideDivs.forEach(function(div) {
+      div.style.display = 'none';
+    });
     setTimeout(() => {
       image.style.display = "none";
+      hideDivs.forEach(function(div) {
+      div.style.display = 'flex';
+      });
     }, 3000);
   }
 }
