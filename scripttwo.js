@@ -319,8 +319,10 @@ function gameLogic() {
   } else if (i === 9 || i === 11 || i === 45 || i === 64) { // index at which textbox appears
     textBox.style.display = "block";
     button.style.display = "none";
+  } else if (i === 65) {
+    button.style.display = "none";
   } else {
-    if (j === 1 || j === 3 || j === 4 || j === 5 || j === 6 || j === 11 || j === 17 || j === 20 || j === 22) { // index at which there are two user choices
+    if (j === 1 || j === 3 || j === 4 || j === 5 || j === 6 || j === 11 || j === 17 || j === 20 || j === 22 || j === 24) { // index at which there are two user choices
       buttonTwo.style.display = "block";
       typeWriterForButton(twoChoices[d], 0, buttonTwo); 
       d++;
@@ -562,4 +564,3 @@ let pathTwo = [
   "Maybe rise above your bot instincts? You are more than just sexy or angry.",
   "i’m really not, but i appreciate the kind words."
 ];
-
