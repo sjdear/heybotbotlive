@@ -180,6 +180,8 @@ span {
 
   .inner-chat-footer {
     margin-bottom: 0vh !important;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 
   .inner-chat {
@@ -210,6 +212,8 @@ span {
 
   .inner-chat-footer {
     margin-bottom: 0vh !important;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 
   .inner-chat {
