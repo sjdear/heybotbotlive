@@ -270,7 +270,8 @@ function userMessage() {
       pathOneFunc();
     }, 500)
   } else if (j === 16) { // when user double texts
-    setTimeout(gameLogic); 
+    let nextTimeout = (message.length * speed) + 200;
+    setTimeout(gameLogic, nextTimeout); 
   } else {
     setTimeout(() => {
       botMessage();
